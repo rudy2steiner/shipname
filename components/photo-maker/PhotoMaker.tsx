@@ -49,9 +49,7 @@ const DEFAULT_TLDS = [
   // Tech TLDs
   'dev', 'app', 'tech', 'ai',
   // Business TLDs
-  'biz', 'inc', 'ltd', 'company',
-  // Regional TLDs
-  'us', 'uk', 'eu', 'asia',
+  'biz',
   // Other Popular TLDs
   'info', 'me', 'xyz', 'site', 'online'
 ] as const;
