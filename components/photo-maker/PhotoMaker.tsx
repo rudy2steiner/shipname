@@ -134,6 +134,7 @@ export function PhotoMaker() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ domain: domainName, tld }),
+        signal: AbortSignal.timeout(5000)
       });
 
       if (!response.ok) {
@@ -400,13 +401,10 @@ export function PhotoMaker() {
                         </div>
                         {item.registrar && (
                           <>
-                            <span className="text-sm text-muted-foreground">
-                              ({item.registrar})
-                            </span>
                             <CollapsibleTrigger asChild>
                               <Button variant="ghost" size="sm" className="h-8 px-2">
                                 <Info className="h-4 w-4 mr-1" />
-                                Details
+                                Whois
                                 <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${
                                   openItems[itemKey] ? 'rotate-180' : ''
                                 }`} />

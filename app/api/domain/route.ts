@@ -20,29 +20,8 @@ interface WhoisResponse {
 async function queryDomain(domain: string, tld: string): Promise<WhoisResponse> {
   try {
     console.log('query:'+domain);
-    const result = domain.includes('com')?{
-      "domainName": "imagemaker.com",
-      "registrar": "Name.com, Inc.",
-      "updatedDate": "2019-10-22T17:57:15.000Z",
-      "creationDate": "1995-10-29T04:00:00.000Z",
-      "expirationDate": "2028-10-28T04:00:00.000Z",
-      "status": [
-          "clientTransferProhibited https://icann.org/epp#clientTransferProhibited"
-      ],
-      "nameServers": [
-          "NS12.WIXDNS.NET",
-          "NS13.WIXDNS.NET"
-      ],
-      "isAvailable": false,
-      "raw": "   Domain Name: IMAGEMAKER.COM\r\n   Registry Domain ID: 2947_DOMAIN_COM-VRSN\r\n   Registrar WHOIS Server: whois.name.com\r\n   Registrar URL: http://www.name.com\r\n   Updated Date: 2019-10-22T17:57:15Z\r\n   Creation Date: 1995-10-29T04:00:00Z\r\n   Registry Expiry Date: 2028-10-28T04:00:00Z\r\n   Registrar: Name.com, Inc.\r\n   Registrar IANA ID: 625\r\n   Registrar Abuse Contact Email: abuse@name.com\r\n   Registrar Abuse Contact Phone: 7202492374\r\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\r\n   Name Server: NS12.WIXDNS.NET\r\n   Name Server: NS13.WIXDNS.NET\r\n   DNSSEC: unsigned\r\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\r\n>>> Last update of whois database: 2025-02-03T03:56:49Z <<<\r\n\r\nFor more information on Whois status codes, please visit https://icann.org/epp\r\n\r\nNOTICE: The expiration date displayed in this record is the date the\r\nregistrar's sponsorship of the domain name registration in the registry is\r\ncurrently set to expire. This date does not necessarily reflect the expiration\r\ndate of the domain name registrant's agreement with the sponsoring\r\nregistrar.  Users may consult the sponsoring registrar's Whois database to\r\nview the registrar's reported date of expiration for this registration.\r\n\r\nTERMS OF USE: You are not authorized to access or query our Whois\r\ndatabase through the use of electronic processes that are high-volume and\r\nautomated except as reasonably necessary to register domain names or\r\nmodify existing registrations; the Data in VeriSign Global Registry\r\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\r\ninformation purposes only, and to assist persons in obtaining information\r\nabout or related to a domain name registration record. VeriSign does not\r\nguarantee its accuracy. By submitting a Whois query, you agree to abide\r\nby the following terms of use: You agree that you may use this Data only\r\nfor lawful purposes and that under no circumstances will you use this Data\r\nto: (1) allow, enable, or otherwise support the transmission of mass\r\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\r\nor facsimile; or (2) enable high volume, automated, electronic processes\r\nthat apply to VeriSign (or its computer systems). The compilation,\r\nrepackaging, dissemination or other use of this Data is expressly\r\nprohibited without the prior written consent of VeriSign. You agree not to\r\nuse electronic processes that are automated and high-volume to access or\r\nquery the Whois database except as reasonably necessary to register\r\ndomain names or modify existing registrations. VeriSign reserves the right\r\nto restrict your access to the Whois database in its sole discretion to ensure\r\noperational stability.  VeriSign may restrict or terminate your access to the\r\nWhois database for failure to abide by these terms of use. VeriSign\r\nreserves the right to modify these terms at any time.\r\n\r\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\r\nRegistrars.\r\n"
-    }:{
-      "domainName": "imagemaker2000.com",
-      "isAvailable": true,
-      "raw": "No match for domain \"IMAGEMAKER2000.COM\".\r\n>>> Last update of whois database: 2025-02-03T04:49:55Z <<<\r\n\r\nNOTICE: The expiration date displayed in this record is the date the\r\nregistrar's sponsorship of the domain name registration in the registry is\r\ncurrently set to expire. This date does not necessarily reflect the expiration\r\ndate of the domain name registrant's agreement with the sponsoring\r\nregistrar.  Users may consult the sponsoring registrar's Whois database to\r\nview the registrar's reported date of expiration for this registration.\r\n\r\nTERMS OF USE: You are not authorized to access or query our Whois\r\ndatabase through the use of electronic processes that are high-volume and\r\nautomated except as reasonably necessary to register domain names or\r\nmodify existing registrations; the Data in VeriSign Global Registry\r\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\r\ninformation purposes only, and to assist persons in obtaining information\r\nabout or related to a domain name registration record. VeriSign does not\r\nguarantee its accuracy. By submitting a Whois query, you agree to abide\r\nby the following terms of use: You agree that you may use this Data only\r\nfor lawful purposes and that under no circumstances will you use this Data\r\nto: (1) allow, enable, or otherwise support the transmission of mass\r\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\r\nor facsimile; or (2) enable high volume, automated, electronic processes\r\nthat apply to VeriSign (or its computer systems). The compilation,\r\nrepackaging, dissemination or other use of this Data is expressly\r\nprohibited without the prior written consent of VeriSign. You agree not to\r\nuse electronic processes that are automated and high-volume to access or\r\nquery the Whois database except as reasonably necessary to register\r\ndomain names or modify existing registrations. VeriSign reserves the right\r\nto restrict your access to the Whois database in its sole discretion to ensure\r\noperational stability.  VeriSign may restrict or terminate your access to the\r\nWhois database for failure to abide by these terms of use. VeriSign\r\nreserves the right to modify these terms at any time.\r\n\r\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\r\nRegistrars.\r\n"
-    };
-
+    const result = await whois.lookup(domain);
     console.log('query:'+domain+',result:\n'+JSON.stringify(result));
-
     // Check if domain is available based on isAvailable flag
     if (result.isAvailable) {
       return {
@@ -80,8 +59,7 @@ async function queryDomain(domain: string, tld: string): Promise<WhoisResponse> 
         whoisData: { rawText: error.message }
       };
     }
-
-    console.error('Domain lookup error:', error);
+    console.log('Domain lookup:'+domain+',error:'+JSON.stringify(error));
     return {
       status: 'error',
       tld,
