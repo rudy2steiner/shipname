@@ -1,0 +1,209 @@
+{
+  "common": {
+    "title": "域名检查",
+    "description": "检查多个顶级域名的可用性",
+    "upload": "上传照片",
+    "uploadUrl": "通过URL上传",
+    "add": "添加",
+    "generate": "生成",
+    "options": "选项",
+    "examples": "示例",
+    "generated": "生成结果",
+    "useExample": "使用此示例",
+    "loading": "加载中...",
+    "error": {
+      "title": "错误",
+      "description": "出现错误",
+      "tryAgain": "重试",
+      "notFound": {
+        "title": "页面未找到",
+        "description": "您访问的页面不存在",
+        "returnHome": "返回首页"
+      },
+      "invalidDomain": "请输入有效的域名",
+      "checkFailed": "检查域名可用性失败",
+      "timeout": "请求超时，请重试"
+    },
+    "success": "成功",
+    "exampleLoaded": "示例加载成功",
+    "exampleError": "加载示例失败",
+    "domain": {
+      "title": "域名检查器",
+      "placeholder": "输入域名（例如：example 或 example.com）",
+      "check": "检查可用性",
+      "checking": "检查中...",
+      "available": "可注册",
+      "unavailable": "已被注册",
+      "error": "检查失败",
+      "invalidDomain": "请输入有效的域名",
+      "checkFailed": "检查域名可用性失败"
+    },
+    "table": {
+      "photos": "照片",
+      "prompt": "提示词",
+      "style": "风格",
+      "negativePrompt": "负面提示词",
+      "actions": "操作"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "gallery": "画廊",
+    "blog": "博客"
+  },
+  "form": {
+    "prompt": "提示词",
+    "negativePrompt": "负面提示词",
+    "aspectRatio": "宽高比",
+    "style": "风格",
+    "numSteps": "步数",
+    "styleStrength": "风格强度",
+    "numOutputs": "输出数量",
+    "guidanceScale": "引导比例",
+    "seed": "随机种子",
+    "useDoodle": "使用涂鸦",
+    "adapterScale": "适配器比例",
+    "adapterFactor": "适配器因子"
+  },
+  "hero": {
+    "tagline": "检查域名",
+    "title": "找到您理想的域名",
+    "description": "即时检查多个顶级域名的可用性"
+  },
+  "benefits": {
+    "title": "为什么选择我们",
+    "items": {
+      "quality": {
+        "title": "快速结果",
+        "description": "同时检查多个顶级域名"
+      },
+      "styles": {
+        "title": "多域名后缀",
+        "description": "支持所有主要域名后缀"
+      },
+      "speed": {
+        "title": "实时更新",
+        "description": "获取即时可用性状态"
+      },
+      "batch": {
+        "title": "批量检查",
+        "description": "同时检查多个域名"
+      }
+    }
+  },
+  "features": {
+    "title": "功能特点",
+    "items": {
+      "styleTransfer": {
+        "title": "域名后缀定制",
+        "description": "添加和管理您偏好的域名后缀"
+      },
+      "customPrompts": {
+        "title": "WHOIS数据",
+        "description": "查看详细的域名信息"
+      },
+      "batchProcessing": {
+        "title": "批量处理",
+        "description": "同时检查多个域名"
+      },
+      "highResolution": {
+        "title": "注册商链接",
+        "description": "直接链接到域名注册商"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "使用方法",
+    "steps": {
+      "upload": {
+        "number": "01",
+        "title": "输入域名",
+        "description": "输入您想要的域名"
+      },
+      "style": {
+        "number": "02",
+        "title": "选择后缀",
+        "description": "选择要检查的域名后缀"
+      },
+      "generate": {
+        "number": "03",
+        "title": "检查可用性",
+        "description": "获取即时结果"
+      },
+      "download": {
+        "number": "04",
+        "title": "注册域名",
+        "description": "选择注册商并购买"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "用户评价",
+    "items": [
+      {
+        "name": "张明",
+        "role": "企业主",
+        "quote": "让域名检查变得如此简单。",
+        "image": "/testimonials/t1.jpeg"
+      },
+      {
+        "name": "陈小红",
+        "role": "开发者",
+        "quote": "非常适合检查多个域名后缀的可用性。",
+        "image": "/testimonials/t2.jpeg"
+      },
+      {
+        "name": "李强",
+        "role": "创业者",
+        "quote": "批量检查功能为我节省了大量时间！",
+        "image": "/testimonials/t3.jpeg"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      {
+        "question": "域名检查器是如何工作的？",
+        "answer": "我们的工具使用WHOIS数据同时检查多个顶级域名的可用性。"
+      },
+      {
+        "question": "支持哪些域名后缀？",
+        "answer": "我们支持所有主要的域名后缀，包括.com、.net、.org等。您还可以添加自定义后缀。"
+      },
+      {
+        "question": "服务是免费的吗？",
+        "answer": "是的，我们的基础域名检查服务完全免费。"
+      },
+      {
+        "question": "结果准确度如何？",
+        "answer": "我们直接从WHOIS数据库获取实时结果，以确保最大准确性。"
+      },
+      {
+        "question": "可以同时检查多个域名吗？",
+        "answer": "是的，您可以同时在多个顶级域名中检查一个域名。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备寻找您的域名了吗？",
+    "description": "立即检查多个顶级域名的可用性",
+    "button": "立即检查域名"
+  },
+  "footer": {
+    "product": "产品",
+    "community": "社区",
+    "features": "功能",
+    "examples": "示例",
+    "blog": "博客",
+    "pricing": "定价",
+    "support": "支持",
+    "helpCenter": "帮助中心",
+    "contact": "联系我们",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "cookies": "Cookie政策",
+    "rights": "版权所有"
+  }
+}

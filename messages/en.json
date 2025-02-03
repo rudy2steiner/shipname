@@ -1,0 +1,209 @@
+{
+  "common": {
+    "title": "Domain Checker",
+    "description": "Check domain availability across multiple TLDs",
+    "upload": "Upload Photos",
+    "uploadUrl": "Upload from URL",
+    "add": "Add",
+    "generate": "Generate",
+    "options": "Options",
+    "examples": "Examples",
+    "generated": "Generated Results",
+    "useExample": "Use This Example",
+    "loading": "Loading...",
+    "error": {
+      "title": "Error",
+      "description": "Something went wrong",
+      "tryAgain": "Try Again",
+      "notFound": {
+        "title": "Page Not Found",
+        "description": "The page you're looking for doesn't exist",
+        "returnHome": "Return Home"
+      },
+      "invalidDomain": "Please enter a valid domain name",
+      "checkFailed": "Failed to check domain availability",
+      "timeout": "Request timed out. Please try again."
+    },
+    "success": "Success",
+    "exampleLoaded": "Example loaded successfully",
+    "exampleError": "Failed to load example",
+    "domain": {
+      "title": "Domain Name Checker",
+      "placeholder": "Enter domain name (e.g., example or example.com)",
+      "check": "Check Availability",
+      "checking": "Checking...",
+      "available": "Available",
+      "unavailable": "Taken",
+      "error": "Check Failed",
+      "invalidDomain": "Please enter a valid domain name",
+      "checkFailed": "Failed to check domain availability"
+    },
+    "table": {
+      "photos": "Photos",
+      "prompt": "Prompt",
+      "style": "Style",
+      "negativePrompt": "Negative Prompt",
+      "actions": "Actions"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "blog": "Blog"
+  },
+  "form": {
+    "prompt": "Prompt",
+    "negativePrompt": "Negative Prompt",
+    "aspectRatio": "Aspect Ratio",
+    "style": "Style",
+    "numSteps": "Number of Steps",
+    "styleStrength": "Style Strength",
+    "numOutputs": "Number of Outputs",
+    "guidanceScale": "Guidance Scale",
+    "seed": "Seed",
+    "useDoodle": "Use Doodle",
+    "adapterScale": "Adapter Scale",
+    "adapterFactor": "Adapter Factor"
+  },
+  "hero": {
+    "tagline": "Check Domain Names",
+    "title": "Find Your Perfect Domain Name",
+    "description": "Check domain availability across multiple TLDs instantly"
+  },
+  "benefits": {
+    "title": "Why Choose Us",
+    "items": {
+      "quality": {
+        "title": "Fast Results",
+        "description": "Check multiple TLDs simultaneously"
+      },
+      "styles": {
+        "title": "Multiple TLDs",
+        "description": "Support for all major domain extensions"
+      },
+      "speed": {
+        "title": "Real-time Updates",
+        "description": "Get instant availability status"
+      },
+      "batch": {
+        "title": "Bulk Checking",
+        "description": "Check multiple domains at once"
+      }
+    }
+  },
+  "features": {
+    "title": "Features",
+    "items": {
+      "styleTransfer": {
+        "title": "TLD Customization",
+        "description": "Add and manage your preferred TLDs"
+      },
+      "customPrompts": {
+        "title": "WHOIS Data",
+        "description": "View detailed domain information"
+      },
+      "batchProcessing": {
+        "title": "Batch Processing",
+        "description": "Check multiple domains at once"
+      },
+      "highResolution": {
+        "title": "Registrar Links",
+        "description": "Direct links to domain registrars"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "steps": {
+      "upload": {
+        "number": "01",
+        "title": "Enter Domain",
+        "description": "Type your desired domain name"
+      },
+      "style": {
+        "number": "02",
+        "title": "Select TLDs",
+        "description": "Choose domain extensions to check"
+      },
+      "generate": {
+        "number": "03",
+        "title": "Check Availability",
+        "description": "Get instant results"
+      },
+      "download": {
+        "number": "04",
+        "title": "Register Domain",
+        "description": "Choose a registrar and purchase"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Users Say",
+    "items": [
+      {
+        "name": "John Smith",
+        "role": "Business Owner",
+        "quote": "Makes domain checking so much easier.",
+        "image": "/testimonials/t1.jpeg"
+      },
+      {
+        "name": "Sarah Chen",
+        "role": "Developer",
+        "quote": "Perfect for checking domain availability across TLDs.",
+        "image": "/testimonials/t2.jpeg"
+      },
+      {
+        "name": "Mike Johnson",
+        "role": "Entrepreneur",
+        "quote": "The bulk checking feature saves me so much time!",
+        "image": "/testimonials/t3.jpeg"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How does the domain checker work?",
+        "answer": "Our tool checks domain availability across multiple TLDs simultaneously using WHOIS data."
+      },
+      {
+        "question": "What TLDs are supported?",
+        "answer": "We support all major TLDs including .com, .net, .org, and many more. You can also add custom TLDs."
+      },
+      {
+        "question": "Is the service free?",
+        "answer": "Yes, our basic domain checking service is completely free to use."
+      },
+      {
+        "question": "How accurate are the results?",
+        "answer": "We provide real-time results directly from WHOIS databases for maximum accuracy."
+      },
+      {
+        "question": "Can I check multiple domains at once?",
+        "answer": "Yes, you can check a domain across multiple TLDs simultaneously."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Find Your Domain?",
+    "description": "Check domain availability across multiple TLDs instantly",
+    "button": "Check Domains Now"
+  },
+  "footer": {
+    "product": "Product",
+    "community": "Community",
+    "features": "Features",
+    "examples": "Examples",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved."
+  }
+}
