@@ -11,7 +11,7 @@ import { FAQ } from '@/components/sections/FAQ';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Read To Me: Turn text to speech in seconds | Free Online',
+  title: 'ShipName: Domain Name Check in seconds | Free Online',
   description: 'Transform any text into natural-sounding speech in seconds. Whether you are learning, multitasking, or making content accessible, ReadToMe converts your documents into crystal-clear audio with lifelike voices in over 50 language!',
   keywords: [
   ],

@@ -1,6 +1,6 @@
 {
   "common": {
-    "title": "Domain Checker",
+    "title": "ShipName",
     "description": "Check domain availability across multiple TLDs",
     "upload": "Upload Photos",
     "uploadUrl": "Upload from URL",
