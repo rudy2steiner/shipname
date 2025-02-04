@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
-import { Loader2, Check, X, AlertCircle, ChevronDown, Info, Settings } from 'lucide-react';
+import { Loader2, Check, X, AlertCircle, ChevronDown, Info, Settings, Trash2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Image from 'next/image';
 import {
@@ -105,6 +105,11 @@ export function PhotoMaker() {
     setDomainStatuses(prev => prev.filter(status => status.tld !== tldToRemove));
   };
 
+  const clearAllTlds = () => {
+    setTlds([]);
+    setDomainStatuses([]);
+  };
+
   const formatDate = (dateStr?: string) => {
     if (!dateStr) return null;
     try {
@@ -196,15 +201,16 @@ export function PhotoMaker() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
-      <Card className="p-6">
-        <div className="flex justify-between items-center mb-6">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Card className="p-4 sm:p-6">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4 sm:gap-0">
           <h2 className="text-2xl font-bold">{t('common.domain.title')}</h2>
           <Dialog open={isSettingsOpen} onOpenChange={setIsSettingsOpen}>
             <DialogTrigger asChild>
-              <Button variant="outline" className="flex items-center gap-2">
+              <Button variant="outline" size="sm" className="flex items-center gap-2">
                 <Settings className="h-4 w-4" />
-                <span className="text-sm">TLD customize</span>
+                <span className="hidden sm:inline">TLD customize</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[500px]">
@@ -239,9 +245,20 @@ export function PhotoMaker() {
                   </Button>
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">
-                    Current TLDs
-                  </label>
+                  <div className="flex justify-between items-center mb-2">
+                    <label className="text-sm font-medium">
+                      Current TLDs
+                    </label>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={clearAllTlds}
+                      className="text-destructive hover:text-destructive"
+                    >
+                      <Trash2 className="h-4 w-4 mr-1" />
+                      Clear All
+                    </Button>
+                  </div>
                   <div className="flex flex-wrap gap-2 max-h-[200px] overflow-y-auto p-2 border rounded-md">
                     {tlds.map((tld) => (
                       <div
@@ -273,7 +290,8 @@ export function PhotoMaker() {
           </Dialog>
         </div>
         
-        <div className="flex gap-2 mb-6">
+        {/* Search Input */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <Input
             type="text"
             placeholder={t('common.domain.placeholder')}
@@ -285,16 +303,17 @@ export function PhotoMaker() {
           <Button 
             onClick={handleCheck} 
             disabled={!domain.trim() || isChecking}
+            className="w-full sm:w-auto"
           >
             {isChecking ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              'Check'
-            )}
+              <Loader2 className="h-4 w-4 animate-spin mr-2" />
+            ) : null}
+            {isChecking ? t('common.domain.checking') : t('common.domain.check')}
           </Button>
         </div>
 
-        <div className="space-y-1">
+        {/* Results */}
+        <div className="space-y-3">
           {domain.trim() && domainStatuses.map((item) => {
             const parts = domain.toLowerCase().split('.');
             const domainName = parts.length > 1 
@@ -315,10 +334,12 @@ export function PhotoMaker() {
                   }));
                 }}
               >
-                <div className="grid grid-cols-[2fr,3fr,auto] items-center gap-4 p-3 bg-muted/30 rounded-lg">
-                  <div className="text-lg font-medium truncate">{fullDomain}</div>
+                <div className="grid grid-cols-1 sm:grid-cols-[2fr,3fr,auto] items-center gap-4 p-3 bg-muted/30 rounded-lg">
+                  <div className="text-base sm:text-lg font-medium truncate">
+                    {fullDomain}
+                  </div>
                   
-                  <div className="flex items-center gap-4">
+                  <div className="hidden sm:flex items-center gap-4">
                     {item.status === 'unavailable' && (
                       <span className="text-sm text-muted-foreground whitespace-nowrap">
                         Created: {formatDate(item.createdDate)} • Expires: {formatDate(item.expiresDate)}
@@ -326,7 +347,7 @@ export function PhotoMaker() {
                     )}
                   </div>
                   
-                  <div className="flex items-center justify-end gap-4 whitespace-nowrap">
+                  <div className="flex items-center justify-between sm:justify-end gap-4 whitespace-nowrap">
                     {item.status === 'checking' && (
                       <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
                     )}
@@ -413,7 +434,7 @@ export function PhotoMaker() {
                   <CollapsibleContent>
                     <div className="px-3 py-2">
                       <div className="space-y-3 bg-muted/20 rounded-lg p-3 text-sm">
-                        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                           <div>
                             <span className="text-muted-foreground block text-xs">Registrar</span>
                             <span className="font-medium">{item.registrar}</span>
@@ -430,9 +451,9 @@ export function PhotoMaker() {
 
                         <div>
                           <span className="text-muted-foreground block text-xs mb-1">Name Servers</span>
-                          <div className="grid grid-cols-2 gap-2">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                             {item.whoisData.nameServers?.map((ns, index) => (
-                              <div key={`${itemKey}-ns-${index}`} className="font-mono text-xs bg-muted/30 px-2 py-1 rounded">
+                              <div key={`${itemKey}-ns-${index}`} className="font-mono text-xs bg-muted/30 px-2 py-1 rounded truncate">
                                 {ns}
                               </div>
                             ))}
@@ -441,7 +462,7 @@ export function PhotoMaker() {
 
                         <div>
                           <span className="text-muted-foreground block text-xs mb-1">Raw WHOIS Data</span>
-                          <pre className="text-xs bg-muted/30 p-2 rounded max-h-[120px] overflow-auto">
+                          <pre className="text-xs bg-muted/30 p-2 rounded max-h-[120px] overflow-auto whitespace-pre-wrap">
                             {item.whoisData.rawText}
                           </pre>
                         </div>
