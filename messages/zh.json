@@ -30,7 +30,7 @@
     "domain": {
       "title": "域名检查器",
       "placeholder": "输入域名（例如：example 或 example.com）",
-      "check": "检查可用性",
+      "check": "检查",
       "checking": "检查中...",
       "available": "可注册",
       "unavailable": "已被注册",

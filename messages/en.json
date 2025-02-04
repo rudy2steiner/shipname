@@ -30,7 +30,7 @@
     "domain": {
       "title": "Domain Name Checker",
       "placeholder": "Enter domain name (e.g., example or example.com)",
-      "check": "Check Availability",
+      "check": "Check",
       "checking": "Checking...",
       "available": "Available",
       "unavailable": "Taken",
