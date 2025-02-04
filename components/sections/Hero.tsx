@@ -22,9 +22,6 @@ export function Hero() {
               {t('hero.description')}
             </p>
           </div>
-          <div className="relative w-full h-[500px]">
-
-          </div>
         </div>
       </div>
     </section>
