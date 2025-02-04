@@ -47,33 +47,23 @@ const DEFAULT_TLDS = [
   // Generic TLDs
   'com', 'net', 'org', 'io', 'co', 
   // Tech TLDs
-  'dev', 'app', 'tech', 'ai',
+  'dev', 'app', 'ai',
   // Business TLDs
   'biz',
   // Other Popular TLDs
-  'info', 'me', 'xyz', 'site', 'online'
+  'info', 'me', 'xyz', 'online'
 ] as const;
 
 const REGISTRARS = [
   { 
-    name: 'GoDaddy',
-    url: (domain: string) => `https://www.godaddy.com/domainsearch/find?domainToCheck=${domain}`,
-    logo: 'https://img1.wsimg.com/cdn/Image/All/All/1/en-US/f2c2e1c9-c0d0-4fcc-8fc2-a0c7c335e6c7/godaddy-logo.png'
-  },
-  { 
     name: 'Dynadot',
     url: (domain: string) => `https://www.dynadot.com/domain/search?domain=${domain}`,
-    logo: 'https://www.dynadot.com/favicon-32x32.png'
+    logo: '/dynadot.ico'
   },
   {
-    name: 'Namecheap',
-    url: (domain: string) => `https://www.namecheap.com/domains/registration/results/?domain=${domain}`,
-    logo: 'https://www.namecheap.com/assets/img/nc-icon/favicon-32x32.png'
-  },
-  {
-    name: 'Name.com',
-    url: (domain: string) => `https://www.name.com/domain/search/${domain}`,
-    logo: 'https://www.name.com/favicon-32x32.png'
+      name: 'GoDaddy',
+      url: (domain: string) => `https://www.godaddy.com/domainsearch/find?domainToCheck=${domain}`,
+      logo: '/godadday.png'
   }
 ];
 
@@ -344,7 +334,6 @@ export function PhotoMaker() {
                     {item.status === 'available' && (
                       <div className="flex items-center gap-2">
                         <div className="flex items-center text-green-500">
-                          <Check className="h-5 w-5 mr-2" />
                           <span>{t('common.domain.available')}</span>
                         </div>
                         <DropdownMenu>
@@ -363,7 +352,7 @@ export function PhotoMaker() {
                               <ChevronDown className="h-4 w-4" />
                             </Button>
                           </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end" className="w-[200px]">
+                          <DropdownMenuContent align="end" className="w-[100px]">
                             {REGISTRARS.map((registrar) => (
                               <DropdownMenuItem key={registrar.name} className="p-2">
                                 <a 
@@ -382,7 +371,7 @@ export function PhotoMaker() {
                                       unoptimized
                                     />
                                   </div>
-                                  <span className="flex-1 truncate">Register at {registrar.name}</span>
+                                  <span className="flex-1 truncate"> {registrar.name}</span>
                                 </a>
                               </DropdownMenuItem>
                             ))}
@@ -394,14 +383,12 @@ export function PhotoMaker() {
                     {item.status === 'unavailable' && (
                       <div className="flex items-center gap-2">
                         <div className="flex items-center text-red-500">
-                          <X className="h-5 w-5 mr-2" />
                           <span>{t('common.domain.unavailable')}</span>
                         </div>
                         {item.registrar && (
                           <>
                             <CollapsibleTrigger asChild>
                               <Button variant="ghost" size="sm" className="h-8 px-2">
-                                <Info className="h-4 w-4 mr-1" />
                                 Whois
                                 <ChevronDown className={`ml-1 h-4 w-4 transition-transform duration-200 ${
                                   openItems[itemKey] ? 'rotate-180' : ''
