@@ -21,10 +21,6 @@ export const metadata: Metadata = {
   title: {
     default: 'PhotoMaker - AI Photo Maker',
     template: '%s'
-  },
-  robots: {
-    index: true,
-    follow: true
   }
 };
 
