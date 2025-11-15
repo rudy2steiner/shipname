@@ -22,6 +22,13 @@ export function Hero() {
               {t('hero.description')}
             </p>
           </div>
+          <div className="relative w-full h-auto">
+            <img
+              src="/whoishero.png"
+              alt="PhotoMaker AI Transformation"
+              className="w-full h-full object-contain rounded-lg shadow-xl"
+            />
+          </div>
         </div>
       </div>
     </section>

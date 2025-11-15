@@ -1,9 +1,9 @@
 {
   "common": {
-    "title": "优名",
-    "description": "检查多个顶级域名的可用性",
+    "title": "Whois 检查器",
+    "description": "跨多个顶级域名检查域名可用性",
     "upload": "上传照片",
-    "uploadUrl": "通过URL上传",
+    "uploadUrl": "通过 URL 上传",
     "add": "添加",
     "generate": "生成",
     "options": "选项",
@@ -13,7 +13,7 @@
     "loading": "加载中...",
     "error": {
       "title": "错误",
-      "description": "出现错误",
+      "description": "出现问题",
       "tryAgain": "重试",
       "notFound": {
         "title": "页面未找到",
@@ -26,10 +26,10 @@
     },
     "success": "成功",
     "exampleLoaded": "示例加载成功",
-    "exampleError": "加载示例失败",
+    "exampleError": "示例加载失败",
     "domain": {
       "title": "域名检查器",
-      "placeholder": "输入域名（例如：example 或 example.com）",
+      "placeholder": "输入域名（例如 example 或 example.com）",
       "check": "检查",
       "checking": "检查中...",
       "available": "可注册",
@@ -48,7 +48,7 @@
   },
   "nav": {
     "home": "首页",
-    "gallery": "画廊",
+    "gallery": "图库",
     "blog": "博客"
   },
   "form": {
@@ -63,99 +63,99 @@
     "seed": "随机种子",
     "useDoodle": "使用涂鸦",
     "adapterScale": "适配器比例",
-    "adapterFactor": "适配器因子"
+    "adapterFactor": "适配器系数"
   },
   "hero": {
-    "tagline": "检查域名",
-    "title": "找到您理想的域名",
-    "description": "即时检查多个顶级域名的可用性"
+    "tagline": "即时域名情报",
+    "title": "使用我们的 Whois 检查器获得清晰洞察",
+    "description": "利用 Whois 检查器在构建前确认所有权、到期时间线与注册商选项。"
   },
   "benefits": {
-    "title": "为什么选择我们",
+    "title": "为什么选择 Whois 检查器",
     "items": {
       "quality": {
-        "title": "快速结果",
-        "description": "同时检查多个顶级域名"
+        "title": "验证级准确性",
+        "description": "Whois 检查器提取最新注册局数据，确保每个结果都值得信赖。"
       },
       "styles": {
-        "title": "多域名后缀",
-        "description": "支持所有主要域名后缀"
+        "title": "全球覆盖",
+        "description": "一次 Whois 检查器报告即可扫描 ccTLD、新 gTLD 与传统域。"
       },
       "speed": {
-        "title": "实时更新",
-        "description": "获取即时可用性状态"
+        "title": "实时信号",
+        "description": "注册信息一更新，Whois 检查器立刻同步给你。"
       },
       "batch": {
-        "title": "批量检查",
-        "description": "同时检查多个域名"
+        "title": "批量洞察",
+        "description": "上传资产组合，Whois 检查器瞬间找出即将到期的域名。"
       }
     }
   },
   "features": {
-    "title": "功能特点",
+    "title": "Whois 检查器功能",
     "items": {
       "styleTransfer": {
-        "title": "域名后缀定制",
-        "description": "添加和管理您偏好的域名后缀"
+        "title": "智能后缀筛选",
+        "description": "按照后缀、注册商或国家优先级定制每次 Whois 扫描。"
       },
       "customPrompts": {
-        "title": "WHOIS数据",
-        "description": "查看详细的域名信息"
+        "title": "深度 Whois 数据",
+        "description": "一次点击即可查看注册人、状态码与续费锁等关键信息。"
       },
       "batchProcessing": {
-        "title": "批量处理",
-        "description": "同时检查多个域名"
+        "title": "资产组合监控",
+        "description": "安排循环的 Whois 检查器任务，保护你名下的每个域名。"
       },
       "highResolution": {
-        "title": "注册商链接",
-        "description": "直接链接到域名注册商"
+        "title": "一键跳转注册商",
+        "description": "从 Whois 检查器结果直接跳到可信注册商完成购买。"
       }
     }
   },
   "howItWorks": {
-    "title": "使用方法",
+    "title": "使用流程",
     "steps": {
       "upload": {
         "number": "01",
         "title": "输入域名",
-        "description": "输入您想要的域名"
+        "description": "粘贴单个域名或整份列表到 Whois 检查器。"
       },
       "style": {
         "number": "02",
-        "title": "选择后缀",
-        "description": "选择要检查的域名后缀"
+        "title": "选择关注后缀",
+        "description": "为本次扫描挑选重要的域名后缀或注册局。"
       },
       "generate": {
         "number": "03",
-        "title": "检查可用性",
-        "description": "获取即时结果"
+        "title": "运行扫描",
+        "description": "Whois 检查器获取实时可用性、状态与所有权。"
       },
       "download": {
         "number": "04",
-        "title": "注册域名",
-        "description": "选择注册商并购买"
+        "title": "根据洞察行动",
+        "description": "导出线索、触发提醒或带着核实数据直接结账。"
       }
     }
   },
   "testimonials": {
-    "title": "用户评价",
+    "title": "用户对 Whois 检查器的评价",
     "items": [
       {
         "name": "张明",
         "role": "企业主",
-        "quote": "让域名检查变得如此简单。",
+        "quote": "Whois 检查器帮我抓住了竞争对手过期的域名，带来了最大的流量增长。",
         "image": "/testimonials/t1.jpeg"
       },
       {
         "name": "陈小红",
         "role": "开发者",
-        "quote": "非常适合检查多个域名后缀的可用性。",
+        "quote": "API 让我们把 Whois 检查器无缝接入部署管线，零摩擦。",
         "image": "/testimonials/t2.jpeg"
       },
       {
         "name": "李强",
         "role": "创业者",
-        "quote": "批量检查功能为我节省了大量时间！",
+        "quote": "Whois 检查器的批量导出让我们经纪团队十分钟完成一周的研究。",
         "image": "/testimonials/t3.jpeg"
       }
     ]
@@ -164,31 +164,31 @@
     "title": "常见问题",
     "items": [
       {
-        "question": "域名检查器是如何工作的？",
-        "answer": "我们的工具使用WHOIS数据同时检查多个顶级域名的可用性。"
+        "question": "Whois 检查器如何获取数据？",
+        "answer": "Whois 检查器实时查询权威注册局，不缓存敏感信息，每次请求都会刷新。"
       },
       {
         "question": "支持哪些域名后缀？",
-        "answer": "我们支持所有主要的域名后缀，包括.com、.net、.org等。您还可以添加自定义后缀。"
+        "answer": "涵盖所有主流 gTLD 与数百个 ccTLD，并可按需把私有注册局接入 Whois 检查器。"
       },
       {
         "question": "服务是免费的吗？",
-        "answer": "是的，我们的基础域名检查服务完全免费。"
+        "answer": "核心 Whois 检查器可无限次免费查询，团队自动化可升级到专业监控。"
       },
       {
         "question": "结果准确度如何？",
-        "answer": "我们直接从WHOIS数据库获取实时结果，以确保最大准确性。"
+        "answer": "因为 Whois 检查器直接连接注册局 WHOIS 服务器，你看到的就是注册商使用的数据。"
       },
       {
-        "question": "可以同时检查多个域名吗？",
-        "answer": "是的，您可以同时在多个顶级域名中检查一个域名。"
+        "question": "可以批量检查域名吗？",
+        "answer": "可以——上传 CSV 或粘贴列表，Whois 检查器会并行处理。"
       }
     ]
   },
   "cta": {
-    "title": "准备寻找您的域名了吗？",
-    "description": "立即检查多个顶级域名的可用性",
-    "button": "立即检查域名"
+    "title": "准备好依靠真实 Whois 数据了吗？",
+    "description": "启动 Whois 检查器，在对手察觉前锁定域名。",
+    "button": "运行 Whois 检查器"
   },
   "footer": {
     "product": "产品",
@@ -203,7 +203,7 @@
     "legal": "法律",
     "privacy": "隐私政策",
     "terms": "使用条款",
-    "cookies": "Cookie政策",
+    "cookies": "Cookie 政策",
     "rights": "版权所有"
   }
 }

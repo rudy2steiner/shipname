@@ -17,7 +17,7 @@ export function Navigation() {
         {/* Logo - Left */}
         <div className="flex-none">
           <Link href="/" className="flex items-center space-x-2">
-            <Image className="h-8 w-auto" src="/maker.png" alt="photo maker" width={6} height={6}/>
+            <Image className="h-8 w-auto" src="/logo.png" alt="photo maker" width={6} height={6}/>
             <span className="font-bold text-xl">{t('common.title')}</span>
           </Link>
         </div>

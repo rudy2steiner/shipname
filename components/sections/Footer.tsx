@@ -18,7 +18,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Image className="h-8 w-auto" src="/maker.png" alt="photo maker" width={6} height={6}/>
+              <Image className="h-8 w-auto" src="/logo.png" alt="photo maker" width={6} height={6}/>
               <span className="font-bold text-xl">{t('common.title')}</span>
             </Link>
             <p className="text-sm text-muted-foreground">

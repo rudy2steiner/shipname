@@ -1,6 +1,6 @@
 {
   "common": {
-    "title": "ShipName",
+    "title": "Whois Chchker",
     "description": "Check domain availability across multiple TLDs",
     "upload": "Upload Photos",
     "uploadUrl": "Upload from URL",
@@ -66,49 +66,49 @@
     "adapterFactor": "Adapter Factor"
   },
   "hero": {
-    "tagline": "Check Domain Names",
-    "title": "Find Your Perfect Domain Name",
-    "description": "Check domain availability across multiple TLDs instantly"
+    "tagline": "Instant Domain Intelligence",
+    "title": "Get Clarity with Our Whois Checker",
+    "description": "Use our whois checker to confirm ownership, expiry timelines, and registrar options before you build."
   },
   "benefits": {
-    "title": "Why Choose Us",
+    "title": "Why Choose Whois Checker",
     "items": {
       "quality": {
-        "title": "Fast Results",
-        "description": "Check multiple TLDs simultaneously"
+        "title": "Verified Accuracy",
+        "description": "Our whois checker pulls fresh registry data so you can trust every result."
       },
       "styles": {
-        "title": "Multiple TLDs",
-        "description": "Support for all major domain extensions"
+        "title": "Global Coverage",
+        "description": "Scan ccTLDs, new gTLDs, and legacy domains in one whois checker report."
       },
       "speed": {
-        "title": "Real-time Updates",
-        "description": "Get instant availability status"
+        "title": "Real-time Signals",
+        "description": "Watch ownership changes appear the moment they enter the registry."
       },
       "batch": {
-        "title": "Bulk Checking",
-        "description": "Check multiple domains at once"
+        "title": "Bulk Insight",
+        "description": "Upload portfolios and let the whois checker surface expiring assets instantly."
       }
     }
   },
   "features": {
-    "title": "Features",
+    "title": "Whois Checker Features",
     "items": {
       "styleTransfer": {
-        "title": "TLD Customization",
-        "description": "Add and manage your preferred TLDs"
+        "title": "Smart TLD Filters",
+        "description": "Prioritize extensions, registrars, or countries to tailor every whois checker sweep."
       },
       "customPrompts": {
-        "title": "WHOIS Data",
-        "description": "View detailed domain information"
+        "title": "Deep Whois Data",
+        "description": "Surface registrant, status codes, and renewal locks with a single whois checker click."
       },
       "batchProcessing": {
-        "title": "Batch Processing",
-        "description": "Check multiple domains at once"
+        "title": "Portfolio Monitoring",
+        "description": "Schedule recurring whois checker runs to protect every domain you manage."
       },
       "highResolution": {
-        "title": "Registrar Links",
-        "description": "Direct links to domain registrars"
+        "title": "One-click Registrar Handoffs",
+        "description": "Jump straight from the whois checker result to trusted registrar purchase flows."
       }
     }
   },
@@ -117,45 +117,45 @@
     "steps": {
       "upload": {
         "number": "01",
-        "title": "Enter Domain",
-        "description": "Type your desired domain name"
+        "title": "Enter Domains",
+        "description": "Paste one domain or a full list into the whois checker."
       },
       "style": {
         "number": "02",
-        "title": "Select TLDs",
-        "description": "Choose domain extensions to check"
+        "title": "Pick TLD focus",
+        "description": "Choose extensions or registries that matter for this run."
       },
       "generate": {
         "number": "03",
-        "title": "Check Availability",
-        "description": "Get instant results"
+        "title": "Run the Scan",
+        "description": "The whois checker fetches live availability, status, and ownership."
       },
       "download": {
         "number": "04",
-        "title": "Register Domain",
-        "description": "Choose a registrar and purchase"
+        "title": "Act on Insights",
+        "description": "Export leads, trigger alerts, or jump to checkout with verified data."
       }
     }
   },
   "testimonials": {
-    "title": "What Users Say",
+    "title": "What Users Say About Whois Checker",
     "items": [
       {
         "name": "John Smith",
         "role": "Business Owner",
-        "quote": "Makes domain checking so much easier.",
+        "quote": "This whois checker caught an expiring competitor domain that turned into our biggest traffic win.",
         "image": "/testimonials/t1.jpeg"
       },
       {
         "name": "Sarah Chen",
         "role": "Developer",
-        "quote": "Perfect for checking domain availability across TLDs.",
+        "quote": "The API lets us bake the whois checker into our deployment pipeline with zero friction.",
         "image": "/testimonials/t2.jpeg"
       },
       {
         "name": "Mike Johnson",
         "role": "Entrepreneur",
-        "quote": "The bulk checking feature saves me so much time!",
+        "quote": "Bulk exports from the whois checker gave our brokerage a week of research in ten minutes.",
         "image": "/testimonials/t3.jpeg"
       }
     ]
@@ -164,31 +164,31 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "How does the domain checker work?",
-        "answer": "Our tool checks domain availability across multiple TLDs simultaneously using WHOIS data."
+        "question": "How does the whois checker gather data?",
+        "answer": "The whois checker queries authoritative registries, caches nothing sensitive, and refreshes every request in real time."
       },
       {
         "question": "What TLDs are supported?",
-        "answer": "We support all major TLDs including .com, .net, .org, and many more. You can also add custom TLDs."
+        "answer": "Every major gTLD and hundreds of ccTLDs are available, and you can add private registries to the whois checker as needed."
       },
       {
         "question": "Is the service free?",
-        "answer": "Yes, our basic domain checking service is completely free to use."
+        "answer": "The core whois checker is free for unlimited lookups, with pro monitoring for teams that need automation."
       },
       {
         "question": "How accurate are the results?",
-        "answer": "We provide real-time results directly from WHOIS databases for maximum accuracy."
+        "answer": "Because the whois checker connects directly to registry WHOIS servers, you see the same data registrars rely on."
       },
       {
         "question": "Can I check multiple domains at once?",
-        "answer": "Yes, you can check a domain across multiple TLDs simultaneously."
+        "answer": "Yes—upload CSVs or paste lists, and the whois checker will process them in parallel."
       }
     ]
   },
   "cta": {
-    "title": "Ready to Find Your Domain?",
-    "description": "Check domain availability across multiple TLDs instantly",
-    "button": "Check Domains Now"
+    "title": "Ready to Act on Real Whois Data?",
+    "description": "Launch the whois checker and secure domains before competitors even notice.",
+    "button": "Run the whois checker"
   },
   "footer": {
     "product": "Product",
