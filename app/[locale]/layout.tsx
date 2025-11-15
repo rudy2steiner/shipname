@@ -17,7 +17,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.read-to-me.org'),
+  metadataBase: new URL('https://www.whoischecker.org'),
   title: {
     default: 'PhotoMaker - AI Photo Maker',
     template: '%s'
